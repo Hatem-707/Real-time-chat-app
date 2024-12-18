@@ -1,4 +1,4 @@
-#This project "Real-time chat app" is in development phase.
+# This project "Real-time chat app" is in development phase.
 
 With a collaboration of:
 1- Ahmed Mohammed EL Sherbeny 		120220271
