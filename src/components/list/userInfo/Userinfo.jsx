@@ -1,6 +1,18 @@
+import "./userInfo.css"
+
 const UserInfo = () => {
   return (
-    <div className=''>UserInfo</div>
+    <div className='userInfo'>
+      <div className="user">
+        <img src="./avatar.png"/>
+        <h2>User Name</h2>
+      </div>
+      <div className="icons">
+        <img src="./more.png"/>
+        <img src="./video.png"/>
+        <img src="./edit.png"/>
+      </div>
+    </div>
   )
 }
 

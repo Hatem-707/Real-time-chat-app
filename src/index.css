@@ -1,3 +1,8 @@
+:root{
+  --background-image: url("moon.png");
+  --theme-color: rgba(19.6, 20.4, 28.2, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +11,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   body {
-    background-image: url("/moon.png");
+    background-image: var(--background-image);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +24,7 @@
   .container{
     width: 90vw;
     height: 90vh;
-    background-color: rgba(19.6, 20.4, 28.2, 0.7);
+    background-color: var(--theme-color);
     backdrop-filter: blur(15px) saturate(180%);
     border-radius: 12px;
     border: 2px solid rgba(255, 255, 255, 0.10);
