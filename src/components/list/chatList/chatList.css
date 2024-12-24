@@ -1,10 +1,11 @@
 .chatList{
+    padding: 20px;
     .search{
         display: flex;
         flex: 1;
         overflow: scroll;
         align-items: center;
-        padding: 20px;
+        
         gap: 20px;
         
 
