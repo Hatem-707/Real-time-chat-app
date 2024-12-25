@@ -1,3 +1,7 @@
+:root{
+    --field-color: rgba(66, 66, 92, 0.773);
+}
+
 .chatList{
     padding: 20px;
     .search{
@@ -14,7 +18,7 @@
             height: 40px;
             padding: 10px;
             border-radius: 8px;
-            background-color: rgba(66, 66, 92, 0.773);
+            background-color: var(--field-color);
             cursor: pointer;
         }
 
@@ -22,7 +26,7 @@
             display: flex;
             padding: 10px;
             flex: 1;
-            background-color: rgba(66, 66, 92, 0.773);
+            background-color: var(--field-color);
             border-radius: 8px;
             gap: 20px;
             img {
