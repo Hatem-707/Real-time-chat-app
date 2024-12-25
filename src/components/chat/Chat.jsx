@@ -29,7 +29,75 @@ const Chat = () => {
           <img src = "./info.png" alt = ""/>
         </div>
       </div>
-      <div className = "center">     
+      <div className = "center">
+        <div className= "message">
+          <img src="./avatar.png"/> 
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>
+        <div className= "message own"> 
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+            </div> 
+          </div>
+        <div className= "message">
+          <img src="./avatar.png"/> 
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>
+        <div className= "message own">
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>
+        <div className= "message">
+          <img src="./avatar.png"/> 
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>
+        <div className= "message">
+          <img src="./avatar.png"/> 
+          <div className="texts">
+            <img src="./ocean.webp" alt=""/>
+            <p>
+              Lorem, ipsum 
+              dolor sit amet.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>
+        <div className= "message own">
+          <div className="texts">
+            <p>
+              Lorem, ipsum 
+              dolor sit amet dafasfafafja sj gsjgsjgs gsjgsgis.  
+            </p>  
+            <span>1 minute ago</span>
+          </div> 
+        </div>     
       </div>
       <div className = "bottom">
         <div className = "icons">
