@@ -5,7 +5,7 @@ import Login from "./components/login/Login";
 import Notification from "./components/notification/Notification";
 import Themes from "./components/themes/Themes";
 
-const user = true;
+const user = false;
 
 const App = () => {
   return (

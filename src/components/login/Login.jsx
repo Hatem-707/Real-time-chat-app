@@ -3,6 +3,12 @@ import "./login.css";
 import { toast } from "react-toastify";
 
 const Login = () => {
+  document.documentElement.style.setProperty(
+    "--background-image",  "url('moon.png')"
+  )
+  document.documentElement.style.setProperty(
+    "--theme-color", "rgba(19.6, 20.4, 28.2, 0.7)"
+  )
   const [avatar, setAvatar] = useState({
     file: null,
     url: "",

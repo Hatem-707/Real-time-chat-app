@@ -9,7 +9,7 @@
     flex: 1.3;
     align-items: center;
     justify-content: center;
-    background-color: rgba(241, 224, 238, 0.8);
+    background-color: rgba(241, 224, 238, 0.7);
     flex-direction: column;
     gap: 20px;
     border-top-left-radius: 12px;
@@ -71,7 +71,7 @@
     }
   }
   .register {
-    background-color: rgba(30, 13, 56, 0.7);
+    background-color: rgba(30, 13, 56, 0.5);
     flex: 0.9;
     height: 100%;
     width: 100%;
