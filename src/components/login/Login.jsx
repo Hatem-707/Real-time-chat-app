@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./login.css";
+import { toast } from "react-toastify";
 
 const Login = () => {
-  document.documentElement.style.setProperty("--theme-color", "transparent");
   const [avatar, setAvatar] = useState({
     file: null,
     url: "",
@@ -17,6 +17,11 @@ const Login = () => {
     }
   };
 
+  const handelLogin = (e) =>{
+    e.preventDefault()
+    toast.success("Hello")
+  } 
+
   return (
     <div className="main">
       <div className="login">
@@ -24,7 +29,7 @@ const Login = () => {
         <div className="fields">
           <span>Sign in</span>
           <div className="inner">
-            <form>
+            <form onSubmit={handelLogin}>
               <input
                 type="text"
                 placeholder="Enter your email"
@@ -46,7 +51,7 @@ const Login = () => {
         <div className="fields">
           <span>Sign up</span>
           <div className="inner">
-            <form>
+            <form onSubmit={handelLogin}>
               <label htmlFor="image">
                 <img src={avatar.url || "/avatar.png"} />
               </label>
