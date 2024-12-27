@@ -27,15 +27,30 @@ const Details = () => {
             <img src="./arrowDown.png"/>
           </div>
           <div className="photos">
-            
+            <div className="photoItem">
+              <div className="photoDetail">
+                <img src="./ocean.webp" alt="" />
+                <span>photo_name.png</span>
+              </div>
+            <img src="./download.png" alt="" className="icons"/>
+            </div>
+            <div className="photoItem">
+              <div className="photoDetail">
+                <img src="./ocean.webp" alt="" />
+                <span>photo_name.png</span>
+              </div>
+            <img src="./download.png" alt="" className="icons"/>
+            </div>
           </div>
         </div>
         <div className="option">
           <div className="title">
-            <span>Chat settings</span>
+            <span>Shared files</span>
             <img src="./arrowUp.png"/>
           </div>
-        </div>        
+        </div>   
+        <button>Block user</button>
+        <button className="logout">Logout</button>     
       </div>
     </div>
       
