@@ -115,7 +115,7 @@ const Chatlist = () => {
       ) : (
         <p>No chats available</p>
       )}
-      {addMode && <AddUser />}
+      {addMode && <AddUser setAddMode={setAddMode}/>}
     </div>
   );
 };

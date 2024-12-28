@@ -172,6 +172,7 @@
 
         .emoji{
             position: relative;
+            z-index: 9999;
 
             img{
                 width: 30px;
@@ -180,6 +181,7 @@
             }
 
             .picker{
+                
                 position: absolute;
                 bottom: 50px;
                 left: 0;

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { create } from "zustand";
 import { useUserStore } from "../../../../library/userStore";
 
-const AddUser = () => {
+const AddUser = ({setAddMode}) => {
   const [user, setUser] = useState(null);
   const {currentUser} = useUserStore()
   const handleSearch = async (e) => {
@@ -53,6 +53,7 @@ const AddUser = () => {
                 updatedAt: Date.now()
             })
         })
+        setAddMode(false)
     }catch(err){
         console.log(err);
     }
