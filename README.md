@@ -12,6 +12,7 @@ With a collaboration of:
 
 ## Features 
 We implemented the following features: 
+
 1- Chat list  
 2- Search bar  
 3- User list  
