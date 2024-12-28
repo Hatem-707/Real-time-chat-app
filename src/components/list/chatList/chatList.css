@@ -1,79 +1,84 @@
-:root{
-    --field-color: rgba(66, 66, 92, 0.773);
+:root {
+  --field-color: rgba(66, 66, 92, 0.773);
 }
 
-.chatList{
-    padding: 20px;
-    .search{
-        display: flex;
+.chatList {
+  padding: 20px;
+  .search {
+    display: flex;
+    flex: 1;
+    overflow: scroll;
+    align-items: center;
+
+    gap: 20px;
+
+    .add {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: var(--field-color);
+      cursor: pointer;
+    }
+
+    .searchBar {
+      display: flex;
+      padding: 10px;
+      flex: 1;
+      background-color: var(--field-color);
+      border-radius: 8px;
+      gap: 20px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
         flex: 1;
-        overflow: scroll;
-        align-items: center;
-        
-        gap: 20px;
-        
-
-        .add{
-            width: 40px;
-            height: 40px;
-            padding: 10px;
-            border-radius: 8px;
-            background-color: var(--field-color);
-            cursor: pointer;
-        }
-
-        .searchBar{
-            display: flex;
-            padding: 10px;
-            flex: 1;
-            background-color: var(--field-color);
-            border-radius: 8px;
-            gap: 20px;
-            img {
-                width: 20px;
-                height: 20px;
-            }
-
-            input{
-                background-color: transparent;
-                border: none;
-                outline: none;
-                color: white;   
-                flex: 1;
-            }
-        }
-        
+      }
     }
+  }
 
-    .item{
+  .item {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    cursor: pointer;
+    .inner{
+      display: flex;
+      padding: 10;
+      flex: 1;
+      align-items: center;
+      border-radius: 15px;
+      gap: 10px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 2px solid white;
+      }
+  
+      .texts {
         display: flex;
-        padding: 30px;
-        border-bottom: 1px  solid gray;
+        flex-direction: column;
         gap: 10px;
-        align-items: center;
-        cursor: pointer;
-
-        img{
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 2px solid white;
+  
+        span {
+          font-weight: 500;
         }
-
-        .texts{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-            span{
-                font-weight: 500;
-            }
-
-            p{
-                font-size: 15px;
-                font-weight: 300;
-            }
+  
+        p {
+          font-size: 15px;
+          font-weight: 300;
         }
+      }
     }
+    
+  }
 }

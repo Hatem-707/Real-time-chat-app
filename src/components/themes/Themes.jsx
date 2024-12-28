@@ -14,6 +14,9 @@ const Themes = () => {
       document.documentElement.style.setProperty(
         "--field-color", morning ? "rgba(6.7, 12.2, 15.7, 0.773)" : "rgba(66, 66, 92, 0.773)"
       )
+      document.documentElement.style.setProperty(
+        "--message-color", morning ?  "rgb(174, 58, 38)" : "rgb(122, 21, 140)"
+      )
     
     }
 }

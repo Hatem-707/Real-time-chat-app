@@ -1,5 +1,6 @@
 :root{
     --field-color: rgba(66, 66, 92, 0.773);
+    --message-color: rgb(122, 21, 140);
 }
 .chat{
     flex: 2;
@@ -81,7 +82,7 @@
                 
                 .texts{
                     p{
-                        background-color: #5c1596;
+                        background-color: var(--message-color);
                     }
                 }
             }
