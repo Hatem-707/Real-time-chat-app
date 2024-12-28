@@ -50,7 +50,7 @@ const Details = () => {
           </div>
         </div>   
         <button>Block user</button>
-        <button className="logout">Logout</button>     
+        <button className="logout" onClick={()=>auth.signOut()}>Logout</button>     
       </div>
     </div>
       
