@@ -9,7 +9,7 @@ import { useChatStore } from "../../../library/chatStore";
 const Chatlist = () => {
   const [chats, setChats] = useState([]);
   const [addMode, setAddMode] = useState(false);
-  const [input, setInput] = useState("")
+  const [input, setInput] = useState("");
 
   const { currentUser } = useUserStore();
   const { chatId, changeChat } = useChatStore();
@@ -38,7 +38,6 @@ const Chatlist = () => {
     }
   };
 
-
   useEffect(() => {
     const unSub = onSnapshot(
       doc(db, "userChats", currentUser.id),
@@ -66,14 +65,19 @@ const Chatlist = () => {
     };
   }, [currentUser.id]);
 
-  const filteredChats = chats.filter( c=> c.user.username.toLowerCase().includes(input.toLowerCase()))
-
+  const filteredChats = chats.filter((c) =>
+    c.user.username.toLowerCase().includes(input.toLowerCase())
+  );
   return (
     <div className="chatList">
       <div className="search">
         <div className="searchBar">
           <img src="./search.png" />
-          <input type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)}/>
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={(e) => setInput(e.target.value)}
+          />
         </div>
         <img
           src={addMode ? "./minus.png" : "./plus.png"}
@@ -82,7 +86,7 @@ const Chatlist = () => {
         />
       </div>
       {filteredChats.length > 0 ? (
-        chats.map((chat) => (
+        filteredChats.map((chat) => (
           <div
             className="item"
             key={chat.chatId}
@@ -98,7 +102,11 @@ const Chatlist = () => {
             >
               <img src="./avatar.png" />
               <div className="texts">
-                <span>{chat.user.blocked.includes(currentUser.id)? "User" : (chat.user?.username || "Unknown User")}</span>
+                <span>
+                  {chat.user.blocked.includes(currentUser.id)
+                    ? "User"
+                    : chat.user?.username || "Unknown User"}
+                </span>
                 <p>{chat.lastMessage || "No messages yet"}</p>
               </div>
             </div>
