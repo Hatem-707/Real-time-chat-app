@@ -61,10 +61,14 @@
             border: none;
             outline: none;
             background-color: white;
-            height: 10%;
+            height: 17%;
             width: 30%;
             color: black;
             border-radius: 12px;
+            &:disabled{
+              cursor: not-allowed;
+              background-color: rgba(255, 255, 255, 0.418);
+            }
           }
         }
       }
@@ -145,6 +149,10 @@
             width: 30%;
             color: white;
             border-radius: 12px;
+            &:disabled{
+              cursor: not-allowed;
+              background-color: rgb(100, 59, 160);
+            }
           }
         }
       }
