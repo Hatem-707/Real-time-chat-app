@@ -6,7 +6,7 @@ const Themes = () => {
     
     if (morning) {
       document.documentElement.style.setProperty(
-        "--background-image", morning ? "url('./sun.jpg')" : "url('./moon.png')"
+        "--background-image", morning ? './sun.jpg' : './moon.png'
       )
       document.documentElement.style.setProperty(
         "--theme-color", morning ? "rgba(63.5,76.1,75.7,0.7)":"rgba(19.6, 20.4, 28.2, 0.7)"
