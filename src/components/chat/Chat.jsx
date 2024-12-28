@@ -17,7 +17,8 @@ const Chat = () => {
   const [chat, setChat] = useState(null);
   const [text, setText] = useState("");
 
-  const { chatId, user } = useChatStore();
+  const { chatId, user, isRecieverUserBlocked, isCurrentUserBlocked } =
+    useChatStore();
   const { currentUser } = useUserStore();
 
   const endRef = useRef(null);
@@ -42,10 +43,10 @@ const Chat = () => {
   };
 
   const handleKey = (e) => {
-    if (e.key === "Enter"){
-      handleSend()
+    if (e.key === "Enter" && !isCurrentUserBlocked && !isRecieverUserBlocked) {
+      handleSend();
     }
-  }
+  };
 
   const handleSend = async () => {
     if (text === "") return;
@@ -57,7 +58,7 @@ const Chat = () => {
           createdAt: new Date(),
         }),
       });
-      setText("")
+      setText("");
 
       const userIDs = [currentUser.id, user.id];
 
@@ -126,10 +127,11 @@ const Chat = () => {
         </div>
         <input
           type="text"
-          placeholder="Type a message..."
+          placeholder={(isCurrentUserBlocked || isRecieverUserBlocked) ?"Cannot send to this chat!":"Type a message..."}
           onChange={(e) => setText(e.target.value)}
           value={text}
           onKeyDown={handleKey}
+          disabled={isCurrentUserBlocked || isRecieverUserBlocked}
         />
         <div className="emoji">
           <img
@@ -141,7 +143,7 @@ const Chat = () => {
             <EmojiPicker open={open} onEmojiClick={handleEmoji} />
           </div>
         </div>
-        <button className="sendButton" onClick={handleSend}>
+        <button className="sendButton" onClick={handleSend} disabled={isCurrentUserBlocked || isRecieverUserBlocked}>
           Send
         </button>
       </div>
