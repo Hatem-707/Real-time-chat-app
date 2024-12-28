@@ -8,7 +8,7 @@ Harrasment prevention is implemented in this project as users have the ability t
 
 With a collaboration of:  
 1- Ahmed Mohammed EL Sherbeny 		120220271  
-2- Hatem Sultan Feckry  		      120220264  
+2- Hatem Feckry Sultan  		      120220264  
 
 ## Features 
 We implemented the following features: 
