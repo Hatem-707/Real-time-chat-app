@@ -14,7 +14,7 @@ With a collaboration of:
 We implemented the following features: 
 
 1- Chat list  
-2- Search bar  
+2- Search bar and search for user  
 3- React chat component  
 4- Emoji picker    
 5- React auto-scroll  
@@ -25,5 +25,5 @@ We implemented the following features:
 10- React firebase sign up with email and password      
 11- Fetch a single chat and chat messages     
 12- Block and unblock a user  
-13- Search filter tutorial  
+13- Add a new chat message
 14- Deployment to Vercel  
