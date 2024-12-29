@@ -92,7 +92,7 @@ const Chat = () => {
         <div className="user">
           <img src="./avatar.png" alt="" />
           <div className="texts">
-            <span>{user.username}</span>
+            <span>{user?.username || "user"}</span>
             <p> User Description</p>
           </div>
         </div>
