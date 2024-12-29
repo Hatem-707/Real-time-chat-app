@@ -15,19 +15,15 @@ We implemented the following features:
 
 1- Chat list  
 2- Search bar  
-3- User list  
-4- React chat component  
-5- Emoji picker  
-6- some chat details like chat settings, shared photos, privacy and help  
-7- React auto-scroll  
-8- React login page  
-9- React notification library  
-10- Add new user to chat  
-11- React firebase authentication  
-12- React firebase sign up with email and password    
-13- Create new chat  
-14- Fetch a single chat and chat messages  
-15- Add a new chat message   
-16- Block and unblock a user  
-17- Search filter tutorial  
-18- Deployment to Vercel  
+3- React chat component  
+4- Emoji picker    
+5- React auto-scroll  
+6- React login page  
+7- React notification library  
+8- Add new user to chat  
+9- React firebase authentication  
+10- React firebase sign up with email and password      
+11- Fetch a single chat and chat messages     
+12- Block and unblock a user  
+13- Search filter tutorial  
+14- Deployment to Vercel  
