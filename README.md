@@ -23,7 +23,7 @@ We implemented the following features:
 8- Add new user to chat  
 9- React firebase authentication  
 10- React firebase sign up with email and password      
-11- Fetch a single chat and chat messages     
-12- Block and unblock a user  
-13- Add a new chat message
+11- Fetch a single chat and chat messages 
+12- Add a new chat message
+13- Block and unblock a user  
 14- Deployment to Vercel  
