@@ -14,15 +14,15 @@ With a collaboration of:
 We implemented the following features: 
 
 1- Chat list  
-2- Search bar and search for user  
-3- React chat component  
+2- Search for user in chat list
+3- Chat component  
 4- Emoji picker    
-5- React auto-scroll  
+5- Auto-scroll on page refresh  
 6- React login page  
-7- React notification library  
+7- Notification library  
 8- Add new user to chat  
-9- React firebase authentication  
-10- React firebase sign up with email and password      
+9- Firebase authentication  
+10- Firebase sign up with email and password      
 11- Fetch a single chat and chat messages 
 12- Add a new chat message
 13- Block and unblock a user  
