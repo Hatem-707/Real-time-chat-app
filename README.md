@@ -16,7 +16,7 @@ Harrasment prevention is implemented in this project as users have the ability t
   2. Search for user in chat list
   3. Chat component  
   4. Emoji picker    
-  5- Auto-scroll on page refresh  
+  5. Auto-scroll on page refresh  
   6. React login page  
   7. Notification library  
   8. Add new user to chat  
